@@ -24,11 +24,11 @@ class AuthSwitchButton extends StatelessWidget {
         onPressed: onTap,
         child: showSignIn
             ? const Text(
-                "Don't have account? Sign Up",
+                "まだアカウント持ってない? Sign Upする",
                 style: _kTextStyle,
               )
             : const Text(
-                "Already have account? Sign In",
+                "既にアカウントがある? Sign Inする",
                 style: _kTextStyle,
               ),
       ),

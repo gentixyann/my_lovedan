@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class TextInputField extends StatelessWidget {
+class AuthTextInputField extends StatelessWidget {
   final String hintText;
   final void Function(String value) onChanged;
   final String? errorText;
   final bool obscureText;
 
-  const TextInputField({
+  const AuthTextInputField({
     Key? key,
     required this.hintText,
     required this.onChanged,
