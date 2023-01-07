@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_lovedan/features/auth/screens/auth_screen.dart';
+import 'package:my_lovedan/features/home/screens/home_screen.dart';
+import 'package:my_lovedan/theme/pallete.dart';
 
 import 'firebase_options.dart';
 
@@ -20,11 +22,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const AuthScreen(),
+      title: 'Flutter Lovedan',
+      theme: Pallete.lightModeAppTheme,
+      home: const HomeScreen(),
     );
   }
 }
