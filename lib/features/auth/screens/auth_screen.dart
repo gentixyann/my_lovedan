@@ -13,14 +13,13 @@ void someFunc() {}
 class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
+    var _screenSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Column(
         children: [
-          AuthTextInputField(
-            hintText: "Name",
-            errorText: "違いますね",
-            onChanged: (_) => someFunc(),
-          )
+          SizedBox(
+            height: _screenSize.height * 0.3,
+          ),
         ],
       ),
     );

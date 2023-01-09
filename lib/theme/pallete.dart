@@ -3,8 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class Pallete {
   // Colors
-  static const blackColor = Color.fromRGBO(1, 1, 1, 1); // primary color
-  static const greyColor = Color.fromRGBO(26, 39, 45, 1); // secondary color
+  static const primaryColor = Color.fromRGBO(245, 232, 243, 1);
+  static const secondaryColor = Color.fromARGB(255, 250, 225, 114);
+  static const blackColor = Color.fromRGBO(1, 1, 1, 1);
+  static const greyColor = Color.fromRGBO(26, 39, 45, 1);
   static const drawerColor = Color.fromRGBO(18, 18, 18, 1);
   static const whiteColor = Colors.white;
   static var redColor = Colors.red.shade500;

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_lovedan/core/constants/constants.dart';
+import 'package:my_lovedan/features/home/drawers/profile_drawer.dart';
 import 'package:my_lovedan/theme/pallete.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -41,8 +42,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         }),
       ),
       body: Constants.tabWidgets[_page],
+      drawer: const ProfileDrawer(),
       bottomNavigationBar: CupertinoTabBar(
-        activeColor: Pallete.greyColor,
+        activeColor: Pallete.primaryColor,
         backgroundColor: Pallete.whiteColor,
         items: const [
           BottomNavigationBarItem(

@@ -21,9 +21,8 @@ class ProfileDrawer extends StatelessWidget {
             ),
             ListTile(
               title: const Text('ログアウト'),
-              leading: Icon(
+              leading: const Icon(
                 Icons.logout,
-                color: Pallete.redColor,
               ),
               onTap: () => logOut(),
             ),
